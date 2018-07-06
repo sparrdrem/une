@@ -173,8 +173,8 @@ var cssTarget = "img.";
 								<div id="main" class="clearfix">
 	
 							<div id="skenav" class="ske-menu"><ul id="menu-main" class="menu"><li id="menu-item-1730" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1730"><a href="https://sparrdrem.github.io/une/about.html">About</a></li>
-<li id="menu-item-2716" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-753 current_page_item menu-item-2716"><a href="https://sparrdrem.github.io/une/une.html">Get Ubuntu Netbook Edition</a></li>
-<li id="menu-item-988" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988"><a href="https://sparrdrem.github.io/une/kne.html">Get Kubuntu Netbook Edition</a></li>
+<li id="menu-item-2716" class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-753 menu-item-2716"><a href="https://sparrdrem.github.io/une/une.html">Get Ubuntu Netbook Edition</a></li>
+<li id="menu-item-988" class="menu-item menu-item-type-post_type current_page_item menu-item-object-page current-menu-item menu-item-988"><a href="https://sparrdrem.github.io/une/kne.html">Get Kubuntu Netbook Edition</a></li>
 <li id="menu-item-2718" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2718"><a href="#">Get ARM64 UEFI ISO</a></li>
 <li id="menu-item-3553" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3553"><a href="https://github.com/sparrdrem/une/wiki/UbuntuNetbookSupport">Support</a></li>
 </ul></div>							</div>
@@ -205,6 +205,24 @@ var cssTarget = "img.";
 	</div>
 </div>
 
+<div class="page-content fullwidth-temp">
+	<div class="container post-wrap">
+		<div class="row-fluid">
+			<div id="content" class="span12">
+				<div class="post" id="post-753">
+					<div class="skepost">
+						<p><script type="text/javascript">
+    function updateIsoUrl(version) {
+        var architecture = document.getElementById(version + "select");
+        architecture = architecture.options[architecture.selectedIndex].value;
+        var url = "http://cdimage.ubuntu.com/kubuntu/releases/$1/release/kubuntu-$1-desktop-$2.iso";
+        url = url.replace("$1", version);
+        url = url.replace("$1", version);
+        url = url.replace("$2", architecture);
+        var formID = version + "download";
+        document.getElementById(formID).action = url;
+    }
+jQuery('#17.04select').trigger('change');
 </script></p>
 <div class="download_wrapper">
 <p><!-- ===== Kubuntu 18.10.0 LTS =================================================== --></p>
